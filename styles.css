@@ -899,3 +899,19 @@ textarea:focus {
     outline: 2px solid var(--turquoise);
     outline-offset: 2px;
 }
+.btn-solid {
+    background: #14b8b8; /* نفس اللون التركواز بتاعك */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-solid:hover {
+    background: #0fa3a3;
+}
