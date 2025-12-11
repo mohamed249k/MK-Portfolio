@@ -240,15 +240,16 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // PDF Generation Functionality
-        const downloadCVBtn = document.querySelector('a[download]');
-        
-        if (downloadCVBtn) {
-            downloadCVBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                generateCVPDF();
-            });
-        }
+        // PDF Generation Functionality (DISABLED)
+// const downloadCVBtn = document.querySelector('a[download]');
+
+// if (downloadCVBtn) {
+//     downloadCVBtn.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         generateCVPDF();
+//     });
+// }
+
         
         function generateCVPDF() {
             // Show loading state
@@ -391,6 +392,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     description: 'A modern single-page site designed for a dental clinic. Highlights services, contact info, and professional branding.',
                     tech: ['HTML', 'CSS', 'JavaScript'],
                     link: 'https://mohamed249k.github.io/Dental-clinic-website/'
+                },
+                {
+                    title: 'Smart File Manager',
+                    description: 'A web-based file management system that simulates a real desktop file explorer experience. It allows users to create folders, upload and manage files, use drag & drop, search, preview different file types, and persist data locally using LocalStorage, all within a modern and responsive UI.',
+                    tech: ['HTML', 'CSS', 'JavaScript'],
+                    link: 'https://mohamed249k.github.io/Smart-File-Manager-Web-Desktop-Style-/'
                 },
                 {
                     title: 'Personal Portfolio Website',
