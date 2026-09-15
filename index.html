@@ -1,827 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohamed Karam — Front-End Developer | MK Dev — portfolio">
-    <meta name="theme-color" content="#0f1720">
-    <title>Mohamed Karam (MK Dev) | Front-End Developer</title>
-    <link rel="icon" href="imag/logo.jpg">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mohamed Karam — Front-End Developer | Software Track | IT Student | MK Dev"
+    />
+    <meta name="theme-color" content="#07141c" />
+    <meta property="og:title" content="Mohamed Karam | MK Dev" />
+    <meta
+      property="og:description"
+      content="Front-End Developer | Software Track | IT Student — building modern, responsive, and practical web experiences."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Mohamed Karam | MK Dev</title>
+    <link rel="icon" href="imag/logo.jpg" type="image/jpeg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script defer src="scripts.js"></script>
-</head>
-<body>
-    <!-- Header Navigation -->
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="logo-container">
-                <img src="imag/logo.jpg" alt="MK Dev Logo" class="logo-img">
-                <a href="#" class="logo">MK Dev</a>
-            </div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#certificates" class="nav-link">Certificates</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <button class="theme-toggle" aria-label="Toggle dark/light mode">
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button class="hamburger" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Mohamed Karam home">
+          <img src="imag/logo.jpg" alt="MK Dev logo" class="brand-logo" />
+          <span>MK Dev</span>
+        </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certificates" class="nav-link">Certificates</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="theme-toggle" aria-label="Toggle dark and light mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="My_CV/Mohamed_Karam_CV.pdf" class="btn btn-primary btn-small" download>
+            <i class="fas fa-download"></i>
+            <span>CV</span>
+          </a>
         </div>
+      </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <img src="imag/Background55.png" alt="Background" loading="lazy">
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-bg" aria-hidden="true">
+          <img src="imag/Background55.png" alt="" loading="eager" />
         </div>
+
+        <div class="container hero-content">
+          <div class="hero-card reveal">
+            <div class="profile-frame">
+              <img src="imag/Myphoto2.JPG" alt="Mohamed Karam portrait" loading="eager" />
+            </div>
+
+            <div class="hero-copy">
+              <p class="eyebrow">Mohamed Karam / MK Dev</p>
+              <h1>Front-End Developer</h1>
+              <h2>Software Track | IT Student</h2>
+              <p class="lead">
+                I build practical, responsive, and interactive web experiences that turn ideas into useful digital products.
+              </p>
+
+              <div class="hero-badges" aria-label="Professional focus areas">
+                <span>Web Apps</span>
+                <span>UI / UX</span>
+                <span>AI Projects</span>
+                <span>Cybersecurity</span>
+              </div>
+
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                  <i class="fas fa-briefcase"></i>
+                  <span>View My Work</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <i class="fas fa-envelope"></i>
+                  <span>Contact Me</span>
+                </a>
+              </div>
+
+              <div class="social-links" aria-label="Social media links">
+                <a href="https://github.com/mohamed249k" target="_blank" rel="noreferrer" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohamed-elmagraby-777925361" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/mhmdkrm650" target="_blank" rel="noreferrer" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/mohamed54267911" target="_blank" rel="noreferrer" aria-label="X / Twitter">
+                  <i class="fa-solid fa-x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
         <div class="container">
-            <div class="hero-content">
-                <div class="profile-image">
-                    <img src="imag/Myphoto2.JPG" alt="Mohamed Karam" loading="lazy">
-                </div>
-                <h1 class="typewriter">Mohamed Karam (MK Dev)</h1>
-                <p class="hero-intro typewriter-delay">Front-End Developer & IT Student<br>Experience: more than 2 years</p>
-                
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/share/17Cic3oquA/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/mhmdkrm650?igsh=eXp0bXlvbTgxZHVm&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/mohamed249k" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/mohamed-elmagraby-777925361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://x.com/mohamed54267911?s=21&t=oJqfIP4qo88bCjpdZWDxLg" aria-label="Twitter"><i class="fa-solid fa-x"></i></a>
-                </div>
-                
-                <div class="hero-buttons">
-                    <a href="My_CV/Mohamed_Karam_CV.pdf" class="btn btn-solid" download>
-    <i class="fas fa-download"></i>
-    <span>Download CV</span>
-</a>
+          <div class="section-heading reveal">
+            <p class="section-tag">About</p>
+            <h2>Current 2026 profile</h2>
+          </div>
 
-
-
-
-                        
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Contact me
-                    </a>
-                </div>
+          <div class="about-grid reveal">
+            <div class="about-copy">
+              <p>
+                I’m Mohamed Karam, known professionally as MK Dev. I’m a fourth-year Information Technology student at Borg El Arab Technological University, specializing in the Software Track. My work focuses on front-end development, interactive web applications, UI/UX, and practical digital products that solve real problems.
+              </p>
+              <p>
+                My development work is shaped by hands-on project building, continuous learning, and curiosity in areas like AI, cybersecurity, responsive design, data visualization, and advanced JavaScript interfaces. I enjoy transforming ideas into clear, usable products with strong visual structure and smooth user experience.
+              </p>
             </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+            <div class="about-highlight">
+              <div class="mini-stat">
+                <strong>4th Year</strong>
+                <span>Software Track</span>
+              </div>
+              <div class="mini-stat">
+                <strong>IT</strong>
+                <span>Information Technology</span>
+              </div>
+              <div class="mini-stat">
+                <strong>Front-End</strong>
+                <span>UI, JavaScript, UX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section numbers">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>Hi, I'm Mohamed Karam (MK Dev) — a Front-End Developer and IT student with a passion for building clean, responsive, and user-friendly websites. I specialize in HTML, CSS, and JavaScript, focusing on modern design, smooth interactions, and optimized performance. I enjoy turning complex ideas into simple digital solutions that help people and businesses stand out online. Looking ahead, I aim to grow my expertise, take on challenging projects, and build a strong career in software development and freelancing.</p>
+          <div class="stats-grid reveal">
+            <div class="stat-card">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Year of study</span>
             </div>
+            <div class="stat-card">
+              <span class="stat-number">7+</span>
+              <span class="stat-label">Core technical areas</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Projects built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">AI</span>
+              <span class="stat-label">Cybersecurity & Data</span>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Skills Section -->
-    <section class="skills section">
+      <section class="section journey">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skills-column">
-                    <h3>Technical Skills</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>HTML</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>CSS</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>JavaScript</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Responsive Design</span>
-                            <span>88%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="88%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Git & GitHub</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75%"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skills-column">
-                    <h3>Soft Skills</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Negotiation</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Problem Solving</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Communication</span>
-                            <span>88%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="88%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Emotional Stability</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Self Motivation</span>
-                            <span>92%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="92%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          <div class="section-heading reveal">
+            <p class="section-tag">Journey</p>
+            <h2>Progress from learning to building</h2>
+          </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
+          <div class="timeline reveal">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-stage">Education</span>
+                <h3>IT Student — Software Track</h3>
+                <p>Borg El Arab Technological University, College of Technology of Industry and Energy.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-stage">Learning</span>
+                <h3>Core fundamentals</h3>
+                <p>HTML, CSS, JavaScript, C, C++, Python, PHP, MySQL, networking, Linux, and problem solving.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-stage">Training</span>
+                <h3>Practical exposure</h3>
+                <p>DEPI / AI & Data Science and CIB IT training supported my technical growth and portfolio direction.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-stage">Projects</span>
+                <h3>Interactive systems & tools</h3>
+                <p>I developed dashboards, AI tools, cybersecurity demos, simulations, and business-style web apps.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
-            
-            <div class="projects-category">
-                <h3>Main Projects</h3>
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/pro6.png" alt="Dental Clinic Website" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/Dental-clinic-website/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>Dental Clinic Website</h4>
-                            <p>A modern single-page site designed for a dental clinic. Highlights services, contact info, and professional branding. Clean and accessible design tailored to healthcare clients. Demonstrates real-world website creation for businesses.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="project-tags">
-                                <span>Single-page</span>
-                                <span>Responsive</span>
-                            </div>
-                            <a href="https://mohamed249k.github.io/Dental-clinic-website/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                     <!-- Project 1 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/prim1.png" alt="AI Resume Analyzer Screenshot" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/AI-Resume-Analyzer/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>AI Resume Analyzer</h4>
-                            <p>An AI-powered resume review tool that analyzes uploaded CVs and returns a score with smart feedback. Highlights strengths, points weaknesses, and provides actionable improvement tips — designed for students and job-seekers.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>File Upload</span>
-                            </div>
-                            <div class="project-tags">
-                                <span>AI</span>
-                                <span>Resume</span>
-                                <span>Tools</span>
-                            </div>
-                            <a href="https://mohamed249k.github.io/AI-Resume-Analyzer/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                     <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/prim2.png" alt="Event Ticketing System Screenshot" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/Event-Ticketing-System/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>Event Ticketing System</h4>
-                            <p>A front-end ticketing platform showcasing events in card layout with details (date, location, price). Users can select tickets, add to a shopping cart, and follow a checkout-like flow — perfect demo of UI/UX for event booking interfaces.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="project-tags">
-                                <span>E-commerce</span>
-                                <span>Tickets</span>
-                                <span>Responsive</span>
-                            </div>
-                            <a href="https://mohamed249k.github.io/Event-Ticketing-System/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                    <!-- Project 1 -->
-                     <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/prim3.png" alt="Smart File Manager Screenshot" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/Smart-File-Manager-Web-Desktop-Style-/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>Smart File Manager</h4>
-                            <p>A desktop-style web file manager that simulates a real file explorer. Users can create folders, drag & drop files, preview different types (images, text), search, and the app persists data using LocalStorage for a local, offline-friendly experience.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>LocalStorage</span>
-                            </div>
-                            <div class="project-tags">
-                                <span>Single-page</span>
-                                <span>Responsive</span>
-                                <span>Files</span>
-                            </div>
-                            <a href="https://mohamed249k.github.io/Smart-File-Manager-Web-Desktop-Style-/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/prim7.png" alt="Smart File Manager Screenshot" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/Smart-File-Manager-Web-Desktop-Style-/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>Shaban Fish Restaurant Website</h4>
-                            <p>A modern and responsive seafood restaurant website designed to showcase the menu, featured dishes, and restaurant details. The site focuses on clean UI, smooth navigation, and a visually appealing layout tailored for local businesses, providing an optimal user experience across all devices.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                
-                            </div>
-                            <div class="project-tags">
-                                <span>Restaurant</span>
-                                <span>Responsive</span>
-                                
-                            </div>
-                            <a href="https://elmohammady.github.io/Shaban-Fish/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/prim8.png" alt="Smart File Manager Screenshot" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/Islami-Quiz-Application/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>Islami Quiz Application</h4>
-                            <p>A responsive Islamic quiz web application that tests users with a variety of religious questions. It features multiple-choice questions, instant feedback, score tracking, and a clean UI designed for an engaging and educational user experience across all devices.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                
-                            </div>
-                            <div class="project-tags">
-                                <span>Quiz</span>
-                                <span>Responsive</span>
-                                <span>Educational</span>
+          <div class="section-heading reveal">
+            <p class="section-tag">Skills</p>
+            <h2>Technical profile</h2>
+          </div>
 
-                                
-                            </div>
-                            <a href="https://mohamed249k.github.io/Islami-Quiz-Application/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                    <article class="project-card">
-  <div class="project-image">
-    <img src="imag/prim4.png" alt="AI Chatbot Builder Screenshot" loading="lazy">
-    <div class="project-overlay">
-      <a href="https://mohamed249k.github.io/AI-Chatbot-Builder/" class="project-link" target="_blank" aria-label="Live Demo">
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-      <button class="project-view" aria-label="View Image">
-        <i class="fas fa-eye"></i>
-      </button>
-    </div>
-  </div>
-  <div class="project-content">
-    <h4>AI Chatbot Builder</h4>
-    <p>A web-based chatbot builder that lets users create, customize, and deploy their own AI chatbots in-browser. It features a clean front-end UI, dynamic response handling, and an easy-to-use interface for designing conversational flows.</p>
-    <div class="project-tech">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-    </div>
-    <div class="project-tags">
-      <span>AI</span>
-      <span>Chatbot</span>
-      <span>Web App</span>
-    </div>
-    <a href="https://mohamed249k.github.io/AI-Chatbot-Builder/" class="btn btn-primary project-demo-btn" target="_blank">
-      <i class="fas fa-external-link-alt"></i> Live Demo
-    </a>
-  </div>
-</article>
-<article class="project-card">
-  <div class="project-image">
-    <img src="imag/prim5.png" alt="Visual Database Designer Screenshot" loading="lazy">
-    <div class="project-overlay">
-      <a href="https://mohamed249k.github.io/Visual-Database-Designer/" class="project-link" target="_blank" aria-label="Live Demo">
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-      <button class="project-view" aria-label="View Image">
-        <i class="fas fa-eye"></i>
-      </button>
-    </div>
-  </div>
-  <div class="project-content">
-    <h4>Visual Database Designer</h4>
-    <p>A web-based visual tool for designing and modeling database schemas. Users can draw entity-relationship diagrams, define tables and relationships, and export structure — giving a user-friendly interface for database planning and design without installing desktop software.</p>
-    <div class="project-tech">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-    </div>
-    <div class="project-tags">
-      <span>Database</span>
-      <span>Tool</span>
-      <span>Web App</span>
-    </div>
-    <a href="https://mohamed249k.github.io/Visual-Database-Designer/" class="btn btn-primary project-demo-btn" target="_blank">
-      <i class="fas fa-external-link-alt"></i> Live Demo
-    </a>
-  </div>
-</article>
-<article class="project-card">
-  <div class="project-image">
-    <img src="imag/prim6.png" alt="Smart Form Builder Screenshot" loading="lazy">
-    <div class="project-overlay">
-      <a href="https://mohamed249k.github.io/Smart-Form-Builder-with-Logic-Rules/" class="project-link" target="_blank" aria-label="Live Demo">
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-      <button class="project-view" aria-label="View Image">
-        <i class="fas fa-eye"></i>
-      </button>
-    </div>
-  </div>
-  <div class="project-content">
-    <h4>Smart Form Builder with Logic Rules</h4>
-    <p>A dynamic web form builder that lets users design custom forms with conditional logic rules. Users can add input fields, configure validation, set conditional visibility, and generate forms dynamically — ideal for polls, surveys, and data collection tools without backend setup.</p>
-    <div class="project-tech">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-    </div>
-    <div class="project-tags">
-      <span>Form Builder</span>
-      <span>Dynamic</span>
-      <span>Web App</span>
-    </div>
-    <a href="https://mohamed249k.github.io/Smart-Form-Builder-with-Logic-Rules/" class="btn btn-primary project-demo-btn" target="_blank">
-      <i class="fas fa-external-link-alt"></i> Live Demo
-    </a>
-  </div>
-</article>
-
-
-                    <!-- Project 2 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/pro7.png" alt="Personal Portfolio Website" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/MyWebsite2/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>Personal Portfolio Website</h4>
-                            <p>A professional personal site to present skills and projects. Includes About, Projects, and Contact sections with clean design. Responsive layout ensures smooth browsing across devices. Serves as the main showcase of my work and brand identity.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="project-tags">
-                                <span>Portfolio</span>
-                                <span>Responsive</span>
-                            </div>
-                            <a href="https://mohamed249k.github.io/MyWebsite2/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <!-- Project 3 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/pro4.png" alt="Product Management System" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/Product-Management-CRUD/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>Product Management System</h4>
-                            <p>A system to manage products with Create, Read, Update, Delete features. Includes forms and tables for handling inventory data. Organized interface ensures smooth navigation and usability. Demonstrates full CRUD functionality in a structured project.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="project-tags">
-                                <span>CRUD</span>
-                                <span>Forms</span>
-                            </div>
-                            <a href="https://mohamed249k.github.io/Product-Management-CRUD/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <!-- Project 4 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/pro3.png" alt="Dashboard" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/Dash-board/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>Dashboard</h4>
-                            <p>A dynamic and interactive dashboard that visualizes data in real-time. It features charts, tables, and metrics for easy insights. Designed with responsiveness in mind for seamless use across devices. Built to showcase strong front-end skills and clean UI design.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>Chart.js</span>
-                            </div>
-                            <div class="project-tags">
-                                <span>Dashboard</span>
-                                <span>Charts</span>
-                            </div>
-                            <a href="https://mohamed249k.github.io/Dash-board/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                </div>
+          <div class="skills-grid reveal">
+            <div class="skill-group">
+              <h3>Front-End</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>UI / UX</li>
+              </ul>
             </div>
-            
-            <div class="projects-category">
-                <h3>Minor Projects</h3>
-                <div class="projects-grid">
-                    <!-- Minor Project 1 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/pro8.png" alt="Photo Edit" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/Photo-Edit/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>Photo Edit</h4>
-                            <p>A simple web-based photo editing tool for quick adjustments. Users can crop, filter, and enhance images easily. Minimalistic design makes it intuitive and easy to use. Showcases creativity in combining UI with image manipulation.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>Canvas API</span>
-                            </div>
-                            <div class="project-tags">
-                                <span>Photo Editing</span>
-                                <span>Tools</span>
-                            </div>
-                            <a href="https://mohamed249k.github.io/Photo-Edit/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <!-- Minor Project 2 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/pro2.png" alt="Interactive Quiz App" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/Interactive-Quiz-/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>Interactive Quiz App</h4>
-                            <p>A fun quiz platform with multiple-choice questions. Tracks user progress and shows results at the end. Built for engagement with interactive elements and feedback. Highlights strong JavaScript logic and dynamic UI updates.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="project-tags">
-                                <span>Quiz</span>
-                                <span>Interactive</span>
-                            </div>
-                            <a href="https://mohamed249k.github.io/Interactive-Quiz-/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <!-- Minor Project 3 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/pro1.png" alt="Recipe Finder App" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/Recipe-Finder/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>Recipe Finder App</h4>
-                            <p>A web app that fetches recipes from an external API. Users can search by keywords and explore cooking details. Each recipe displays ingredients, instructions, and images. Built to highlight API integration and user-friendly design.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>API</span>
-                            </div>
-                            <div class="project-tags">
-                                <span>API Integration</span>
-                                <span>Recipes</span>
-                            </div>
-                            <a href="https://mohamed249k.github.io/Recipe-Finder/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                    
-                    <!-- Minor Project 4 -->
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="imag/pro5.png" alt="Portfolio Builder Tool" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="https://mohamed249k.github.io/Portfolio-Tool-with-Live-Preview/" class="project-link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <button class="project-view" aria-label="View Image">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h4>Portfolio Builder Tool</h4>
-                            <p>An online tool that helps users create professional portfolios easily. Includes sections for projects, skills, and personal branding. Responsive templates ensure the portfolio looks great on all screens. A practical project combining design and interactivity.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="project-tags">
-                                <span>Tool</span>
-                                <span>Portfolio Builder</span>
-                            </div>
-                            <a href="https://mohamed249k.github.io/Portfolio-Tool-with-Live-Preview/" class="btn btn-primary project-demo-btn" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </article>
-                </div>
+
+            <div class="skill-group">
+              <h3>Programming</h3>
+              <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>PHP</li>
+              </ul>
             </div>
+
+            <div class="skill-group">
+              <h3>Data & Backend Foundations</h3>
+              <ul>
+                <li>MySQL</li>
+                <li>Database Development</li>
+                <li>REST / API Integration</li>
+                <li>LocalStorage</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3>Tools</h3>
+              <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Node.js</li>
+                <li>Linux</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3>Technical Domains</h3>
+              <ul>
+                <li>Cybersecurity</li>
+                <li>Networking</li>
+                <li>CCNA Concepts</li>
+                <li>Data Structures</li>
+                <li>AI Applications</li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates section">
+      <section id="projects" class="section projects">
         <div class="container">
-            <h2 class="section-title">Certificates</h2>
-            <div class="certificates-grid">
-                <div class="certificate-item">
-                    <img src="imag/sh1.jpg" alt="Certificate 1" loading="lazy">
-                </div>
-                <div class="certificate-item">
-                    <img src="imag/sg2.jpg" alt="Certificate 2" loading="lazy">
-                </div>
-                <div class="certificate-item">
-                    <img src="imag/sh3.jpg" alt="Certificate 3" loading="lazy">
-                </div>
-                <div class="certificate-item">
-                    <img src="imag/sh5.jpg" alt="Certificate 4" loading="lazy">
-                </div>
+          <div class="section-heading reveal">
+            <p class="section-tag">Projects</p>
+            <h2>Complete developer work library</h2>
+          </div>
+
+          <div class="project-stats reveal" aria-label="Project statistics">
+            <div class="stat-pill">
+              <strong id="projectTotalCount">0</strong>
+              <span>Total Projects</span>
             </div>
+            <div class="stat-pill">
+              <strong id="projectFeaturedCount">0</strong>
+              <span>Featured</span>
+            </div>
+            <div class="stat-pill">
+              <strong id="projectTechCount">0</strong>
+              <span>Technologies</span>
+            </div>
+            <div class="stat-pill">
+              <strong id="projectCategoryCount">0</strong>
+              <span>Categories</span>
+            </div>
+          </div>
+
+          <div class="project-toolbar reveal">
+            <label class="search-wrap" for="projectSearch">
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <input id="projectSearch" type="search" placeholder="Search by title, technology, or category" aria-label="Search projects" />
+            </label>
+
+            <label class="sort-wrap" for="projectSort">
+              <span>Sort</span>
+              <select id="projectSort" aria-label="Sort projects">
+                <option value="featured">Featured first</option>
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="az">A–Z</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="filter-bar reveal" aria-label="Project filters">
+            <button class="filter-btn active" data-filter="all" type="button">All</button>
+            <button class="filter-btn" data-filter="Front-End" type="button">Front-End</button>
+            <button class="filter-btn" data-filter="JavaScript" type="button">JavaScript</button>
+            <button class="filter-btn" data-filter="AI" type="button">AI</button>
+            <button class="filter-btn" data-filter="Cybersecurity" type="button">Cybersecurity</button>
+            <button class="filter-btn" data-filter="Tools" type="button">Tools</button>
+            <button class="filter-btn" data-filter="Dashboards" type="button">Dashboards</button>
+            <button class="filter-btn" data-filter="Simulations" type="button">Simulations</button>
+            <button class="filter-btn" data-filter="Business" type="button">Business</button>
+            <button class="filter-btn" data-filter="Education" type="button">Education</button>
+            <button class="filter-btn" data-filter="Productivity" type="button">Productivity</button>
+            <button class="filter-btn" data-filter="Database" type="button">Database</button>
+          </div>
+
+          <div class="projects-library-header reveal">
+            <div>
+              <p class="section-tag small">Featured</p>
+              <h3>Strongest work</h3>
+            </div>
+          </div>
+          <div id="featuredProjectsGrid" class="projects-grid reveal" aria-live="polite"></div>
+
+          <div class="projects-library-header reveal">
+            <div>
+              <p class="section-tag small">Library</p>
+              <h3>Projects Hub and portfolio archive</h3>
+            </div>
+            <div class="project-count-wrap">
+              <span id="projectLibraryCount">0</span>
+              <span>Projects</span>
+            </div>
+          </div>
+
+          <div id="projectLibraryGrid" class="projects-grid reveal" aria-live="polite"></div>
+
+          <div class="library-actions reveal">
+            <button id="loadMoreProjects" class="btn btn-secondary" type="button">Load More</button>
+            <a href="https://mohamed249k.github.io/Projects-Hub/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-arrow-up-right-from-square"></i>
+              <span>Explore All Projects</span>
+            </a>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <!-- Contact Section -->
-<section id="contact" class="contact section">
-    <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <h3>Get in touch</h3>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <span>Email</span>
-                            <a href="mailto:mohamedelmagraby35@gmail.com">mohamedelmagraby35@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <span>Phone</span>
-                            <a href="tel:01201535709">01201535709</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-whatsapp"></i>
-                        <div>
-                            <span>WhatsApp</span>
-                            <a href="https://wa.me/201017325592" target="_blank">01017325592</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <span>Location</span>
-                            <p>Alexandria, Egypt</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/share/17Cic3oquA/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/mhmdkrm650?igsh=eXp0bXlvbTgxZHVm&utm_source=qr" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/mohamed249k" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/mohamed-elmagraby-777925361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://x.com/mohamed54267911?s=21&t=oJqfIP4qo88bCjpdZWDxLg" aria-label="Twitter"><i class="fa-solid fa-x"></i></a>
-                </div>
-                
-                <p class="response-time">I respond within 24–48 hours</p>
-            </div>
-            
-            <div class="contact-form">
-                <form id="contactForm" action="https://formspree.io/f/xanaleaj" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
+      <section id="certificates" class="section certificates">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-tag">Certificates</p>
+            <h2>Training and learning</h2>
+          </div>
+
+          <div class="cert-grid reveal" id="certificatesGrid"></div>
         </div>
-    </div>
-</section>
+      </section>
 
+      <section id="contact" class="section contact">
+        <div class="container contact-shell reveal">
+          <div class="contact-panel">
+            <p class="section-tag">Contact</p>
+            <h2>Let’s build something useful.</h2>
 
-    <!-- Footer -->
+            <div class="contact-list">
+              <a href="mailto:mohamedelmagraby35@gmail.com" class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span>Email</span>
+                  <strong>mohamedelmagraby35@gmail.com</strong>
+                </div>
+              </a>
+
+              <a href="tel:01201535709" class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span>Phone</span>
+                  <strong>01201535709</strong>
+                </div>
+              </a>
+
+              <a href="https://wa.me/201017325592" target="_blank" rel="noreferrer" class="contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                  <span>WhatsApp</span>
+                  <strong>01017325592</strong>
+                </div>
+              </a>
+
+              <div class="contact-item static">
+                <i class="fas fa-location-dot"></i>
+                <div>
+                  <span>Location</span>
+                  <strong>Alexandria, Egypt</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links contact-socials">
+              <a href="https://github.com/mohamed249k" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mohamed-elmagraby-777925361" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.instagram.com/mhmdkrm650" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="form-panel">
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+
+              <div class="form-row">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="Project inquiry" required />
+              </div>
+
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Mohamed Karam . All rights reserved.</p>
-        </div>
+      <div class="container footer-wrap">
+        <p>© 2026 Mohamed Karam • MK Dev</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top">Back to top</a>
+      </div>
     </footer>
 
-    <!-- Lightbox Modal -->
-    <div class="lightbox" id="lightbox">
-        <div class="lightbox-content">
-            <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
-            <img src="" alt="" class="lightbox-image">
-        </div>
+    <div id="projectModal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" aria-label="Close details">×</button>
+        <div class="modal-content"></div>
+      </div>
     </div>
-</body>
+
+    <div id="certificateModal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-panel cert-panel" role="dialog" aria-modal="true" aria-labelledby="certTitle">
+        <button class="modal-close" aria-label="Close certificate">×</button>
+        <div class="modal-content cert-content"></div>
+      </div>
+    </div>
+  </body>
 </html>
