@@ -1,27 +1,31 @@
 const certificateData = [
   {
-    title: "AI & Data Science Track",
-    issuer: "DEPI / AI & Data Science",
-    description: "A practical learning path focused on AI, data thinking, and applied digital problem solving.",
-    image: "imag/Background 1.jpg"
+    title: "Red Hat System Administration",
+    issuer: "ITI Platform / Mahara-Tech",
+    date: "20/11/2024",
+    description: "Certificate of completion for Red Hat System Administration.",
+    image: "imag/sg2.jpg"
   },
   {
-    title: "IT Essentials",
-    issuer: "Technology & Digital Skills Training",
-    description: "Foundational IT knowledge covering productivity, systems understanding, and applied technical learning.",
-    image: "imag/Background 2.jpg"
+    title: "Certified Ethical Hacking",
+    issuer: "ITI Platform / Mahara-Tech",
+    date: "26/11/2024",
+    description: "Certificate of completion for Certified Ethical Hacking.",
+    image: "imag/sg22.jpg"
   },
   {
-    title: "Front-End Fundamentals",
-    issuer: "Web Development Training",
-    description: "A hands-on exploration of HTML, CSS, and JavaScript for responsive and interactive interfaces.",
-    image: "imag/Background 3.jpg"
+    title: "Front-end programming",
+    issuer: "ITI Platform / Mahara-Tech",
+    date: "23/11/2024",
+    description: "Certificate of completion for Front-end programming.",
+    image: "imag/sh1.jpg"
   },
   {
-    title: "Cybersecurity Awareness",
-    issuer: "Security & Digital Risk Learning",
-    description: "Focused training on protective thinking, digital awareness, and modern cyber-risk awareness concepts.",
-    image: "imag/Background 4.jpg"
+    title: "Cyber security basics",
+    issuer: "ITI Platform / Mahara-Tech",
+    date: "25/11/2024",
+    description: "Certificate of completion for Cyber security basics.",
+    image: "imag/sh3.jpg"
   }
 ];
 
@@ -1021,6 +1025,7 @@ function renderCertificates() {
       <img src="${cert.image}" alt="${escapeHtml(cert.title)} certificate" loading="lazy" />
       <h3>${escapeHtml(cert.title)}</h3>
       <p>${escapeHtml(cert.issuer)}</p>
+      ${cert.date ? `<p>${escapeHtml(cert.date)}</p>` : ''}
     </button>
   `).join('');
 
@@ -1045,6 +1050,7 @@ function openCertificateModal(cert) {
     <p>${escapeHtml(cert.description)}</p>
     <div class="modal-meta">
       <span>${escapeHtml(cert.issuer)}</span>
+      ${cert.date ? `<span>${escapeHtml(cert.date)}</span>` : ''}
     </div>
   `;
 
@@ -1081,6 +1087,18 @@ function setupNavigation() {
   const navToggle = document.querySelector('.nav-toggle');
   const navList = document.querySelector('.nav-list');
   const navLinks = document.querySelectorAll('.nav-link');
+  const cvLink = document.querySelector('.mobile-cv-item .btn');
+  const mobileCvItem = document.querySelector('.mobile-cv-item');
+  const headerActions = document.querySelector('.header-actions');
+
+  const placeCvLink = () => {
+    if (!cvLink || !mobileCvItem || !headerActions) return;
+    const mobileLayout = window.matchMedia('(max-width: 768px)').matches;
+    (mobileLayout ? mobileCvItem : headerActions).append(cvLink);
+  };
+
+  placeCvLink();
+  window.matchMedia('(max-width: 768px)').addEventListener('change', placeCvLink);
 
   if (navToggle && navList) {
     navToggle.addEventListener('click', () => {
