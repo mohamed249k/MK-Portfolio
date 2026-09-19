@@ -267,6 +267,14 @@ p {
   gap: 0.8rem;
 }
 
+.mobile-cv-item {
+  display: none;
+}
+
+.header-actions > .btn {
+  display: inline-flex;
+}
+
 .theme-toggle {
   width: 42px;
   height: 42px;
@@ -1268,7 +1276,7 @@ p {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .nav-toggle {
     display: inline-block;
   }
@@ -1292,8 +1300,15 @@ p {
     display: flex;
   }
 
-  .header-actions .btn {
-    display: none;
+  .mobile-cv-item {
+    display: block;
+    width: 100%;
+    padding-top: 0.35rem;
+  }
+
+  .mobile-cv-item .btn {
+    width: 100%;
+    min-height: 44px;
   }
 
   .stats-grid,
@@ -1718,17 +1733,16 @@ p {
     }
     
     .nav-list {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 70px);
-        background-color: var(--panel-dark);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: var(--transition);
-        z-index: 999;
+      position: absolute;
+      top: calc(100% + 0.4rem);
+      left: 1rem;
+      right: 1rem;
+      width: auto;
+      height: auto;
+      background-color: var(--panel-strong);
+      align-items: flex-start;
+      justify-content: flex-start;
+      z-index: 999;
     }
     
     .nav-list.active {
